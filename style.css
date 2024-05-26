@@ -354,18 +354,21 @@ p {
     height: 300px;
   }
 }
+
 @media (min-width: 1390px) {
   .tools-wrap{
     padding-left: 15vw;
     padding-right: 15vw;
   }
 }
+
 @media (min-width: 1800px) {
   .tools-wrap{
     padding-left: 20vw;
     padding-right: 20vw;
   }
 }
+
 @media (min-width: 820px) {
   .formsocial-div {
     display: flex;
