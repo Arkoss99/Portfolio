@@ -136,7 +136,7 @@ h1 {
 }
 
 h2 {
-  padding: 10px 0;
+  padding: 50px 0 10px 0;
   color: #B29B01;
   text-align: center;
   font-weight: 600;
@@ -468,7 +468,7 @@ p {
   .arrow {
     display: flex;
     position: relative;
-    margin-bottom: 150px ;
+    margin-bottom: 50px ;
   }
 
   .text-about {
@@ -565,21 +565,21 @@ p {
   z-index: 1000;
   opacity: 1;
   bottom: 0;
-  animation: animateWaves 4s linear infinite;
+  animation: vlnky2 4s linear infinite;
 }
 
 .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
-  animation: animate 4s linear infinite !important;
+  animation: vlnky 4s linear infinite;
 }
 
 .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
   bottom: 15px;
-  animation: animateWaves 3s linear infinite;
+  animation: vlnky2 3s linear infinite;
 }
 
 .wave#wave4 {
@@ -589,7 +589,7 @@ p {
   animation: vlnky 3s linear infinite;
 }
 
-@keyframes animateWaves {
+@keyframes vlnky2 {
   0% {
     background-position-x: 2000px;
   }
