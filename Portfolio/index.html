@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">Milan Zlámal — Portfolio</title>
+  <meta name="description" content="Developer & game enthusiast. Front-end, PHP, and game projects by Milan (Arkoss99)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="#home" class="logo" aria-label="Go to top">MZ<span>.</span></a>
+
+      <!-- Language switch -->
+      <div class="lang-wrap">
+        <label for="langSwitch" class="visually-hidden" data-i18n="lang.label">Jazyk</label>
+        <select id="langSwitch" class="lang-switch" aria-label="Language" value="cs">
+          <option value="cs">CZ</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="navmenu" data-i18n="nav.menu">Menu</button>
+      <ul id="navmenu" class="nav__menu" aria-expanded="false">
+        <li><a href="#projects" data-i18n="nav.projects">Projekty</a></li>
+        <li><a href="#about" data-i18n="nav.about">O mně</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Technologie</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero container">
+      <div class="hero__content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Ahoj, Jmenuji se Milan jsem</p>
+        <h1>
+          <span data-i18n="hero.title1">Vývojář & herní nadšenec</span>
+          <span class="gradient" data-i18n="hero.title2">tvořím čisté a funkční webové stránky</span>
+        </h1>
+        <p class="lede" data-i18n="hero.lede">
+          Stavím moderní weby pomocí HTML, CSS, JavaScriptu a PHP  — a učím se vývoj her v Unity & Unreal Enginu. Mrkni na moji práci níže.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects" data-i18n="hero.cta.projects">Zobrazit projekty</a>
+          <a class="btn btn--ghost" href="https://github.com/Arkoss99" target="_blank" rel="noopener" data-i18n="hero.cta.github">GitHub</a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="ring"> <img src="img/photome2.png" alt=" " width="319"  style="border-radius:50%;"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <div class="section__head">
+        <h2 data-i18n="projects.title">Vybrané projekty</h2>
+        <p class="muted" data-i18n="projects.muted">Nějaké mé projekty na kterých jsem zatím pracoval. </p>
+      </div>
+      <div id="projects-grid" class="grid projects"></div>
+      <div class="more">
+        <a class="btn btn--ghost" href="https://github.com/Arkoss99?tab=repositories" target="_blank" rel="noopener" data-i18n="projects.more">Projít vše na GitHubu</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="section__head">
+        <h2 data-i18n="about.title">O mně</h2>
+      </div>
+      <div class="split">
+        <div>
+          <p data-i18n="about.p1">
+            Jmenuji se Milan Zlámal (online: <strong>Arkoss99 nebo kozel</strong>). Baví mě měnit nápady na funkční weby a hry se zaměřením na čistotu a detaily. Na tvorbu webu používám HTML, CSS (SCSS), JavaScript (TypeScript) a PHP; Hry tvořím v Unity &amp; Unreal Enginu.
+          </p>
+          <p data-i18n="about.p2">
+            Momentálně pracuji na horrorové 3D hře <em>„No light left“</em> — Klauzurní práce 3. ročníku ze zadání "Hra na téma svíčka".
+          </p>
+          <ul class="quick">
+            <li data-i18n="about.l1">Jsem z: Česka</li>
+            <li data-i18n="about.l2">Otevřený k spolupráci/freelance</li>
+            <li data-i18n="about.l3">Jazyky: čeština, angličtina</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3 data-i18n="about.highlights">Zajímavosti</h3>
+          <ul class="ticks">
+            <li data-i18n="about.h1">Vytvořil jsem několik školních projektů včetně responzivních webů.</li>
+            <li data-i18n="about.h2">Python utility (např. scripty na zakázku)</li>
+            <li data-i18n="about.h3">Prototypy her v Unrealu a prohlížeči (JS)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <div class="section__head">
+        <h2 data-i18n="skills.title">Technologie</h2>
+      </div>
+      <ul class="tags" id="skills-tags">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>C++</li><li>Git</li>
+        <li>MySQL/MariaDB</li><li>Node.js (basics)</li><li>Unity</li><li>Unreal</li><li>Python</li><li>C#</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <div class="section__head">
+        <h2 data-i18n="contact.title">Kontakt</h2>
+        <p class="muted" data-i18n-html="contact.helper">
+          Máš nápad? Pojďme ho spolu zrealizovat. Použij formulář nebo mi napiš na email <a href="mailto:milanzlamal@post.cz">milanzlamal@post.cz</a>.
+        </p>
+      </div>
+      <form class="form" action="contact.php" method="POST" novalidate>
+        <div class="grid form__grid">
+          <label>
+            <span data-i18n="form.name">Jméno</span>
+            <input name="name" type="text" required maxlength="100" autocomplete="name" />
+          </label>
+          <label>
+            <span data-i18n="form.email">E-mail</span>
+            <input name="email" type="email" required maxlength="200" autocomplete="email" />
+          </label>
+        </div>
+        <label>
+          <span data-i18n="form.message">Zpráva</span>
+          <textarea name="message" rows="6" required maxlength="2000"></textarea>
+        </label>
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn" type="submit" data-i18n="form.send">Odeslat zprávu</button>
+        <p id="form-status" class="muted" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p data-i18n-html="footer.copy">© <span id="year"></span> · <a href="https://github.com/Arkoss99">Milan Zlámal</a></p>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
